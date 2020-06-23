@@ -5,6 +5,7 @@ def call(Boolean skip = false) {
   if (!skip) {
     echo "Executing JUnit tests"
     echo "Trying tags with latest"
+    echo "Latest was changed!"
     sh './gradlew clean test --no-daemon'
   } else {
     echo "Skipping JUnit tests"
